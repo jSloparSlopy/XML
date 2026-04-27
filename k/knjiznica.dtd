@@ -1,6 +1,0 @@
-<!ELEMENT knjiznica (knjiga+)>
-<!ELEMENT knjiga(naslov, autor, godina)>
-<!ELEMENT naslov (#PCDATA)>
-<!ELEMENT autor (#PCDATA)>
-<!ELEMENT godina (#PCDATA)>
-<!ATTLIST knjiga idKnjiga ID #REQUIRED>
