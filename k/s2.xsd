@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <![CDATA[
+        <poruka>
+            <to>Marin</to>
+            <from>Lana</from>
+            <heading>Podsjetnik</heading>
+            <body>Predavanje u 18:00</body>
+        </poruka>
+    ]]>
+
+    <xs:element name="poruka">
+
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="to" type="xs:string"/>
+                <xs:element name="from" type="xs:string"/>
+                <xs:element name="heading" type="xs:string"/>
+                <xs:element name="body" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

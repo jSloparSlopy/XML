@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <![CDATA[
+        Primjer pattern zadavanja broja mobitela i lozinke
+    ]]>
+    <xs:element name="brojMobitela">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[09][13578][0-9]{8}" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="lozinka">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[a-zA-Z0-9]{8}" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filmovi SYSTEM "xml_3.dtd">
+<filmovi>
+    <film idFilm="f1">
+        <naslov>Interstellar</naslov>
+        <godina>2014</godina>
+        <redatelj>Miller</redatelj>
+    </film>
+
+    <film idFilm="f2">
+        <naslov>Shutter Island</naslov>
+        <godina>2010</godina>
+        <redatelj>netz</redatelj>
+    </film>
+
+</filmovi>

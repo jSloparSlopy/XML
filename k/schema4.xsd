@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.com/2001/XMLSChema">
+    <![CDATA[
+        <prijavaIspita>
+            <student>Pero Perić</student>
+            <kolegij>XML tehnologije</kolegij>
+            <status>prijavljen</status>
+            <grupa>A01</grupa>
+        </prijavaIspita>
+    ]]>
+
+    <xs:complexType name="prijavaIspita">
+
+        <xs:element name="student" type="xs:string" />
+        <xs:element name="kolegij" type="xs:string" />
+        <xs:simpleType name="status">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="prijavljen" />
+                <xs:enumeration value="odijavljen" />
+                <xs:enumeration value="u_obradi" />
+            </xs:restriction>
+        </xs:simpleType>
+        <xs:element name="grupa" type="xs:string" />
+    </xs:complexType>
+</xs:schema>

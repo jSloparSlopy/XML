@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="id" type="xs:integer"/>
+    <xs:element name="datumIsporuke" type="xs:date"/>
+    <xs:element name="iznos" type="xs:decimal"/>
+</xs:schema>

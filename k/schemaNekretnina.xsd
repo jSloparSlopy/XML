@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Nekretnine">
+        <xs:complexType>
+
+            <xs:element name="Nekretnina">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="Naslov" type="xs:string"/>
+                        <xs:element name="Tip">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="stan" />
+                                    <xs:enumration value="kuća" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+
+                        <xs:element name="Lokacija">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Grad" type="xs:string"/>
+                                    <xs:element name="Općina" type="xs:string"/>
+                                    <xs:element name="Adresa" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+
+                        <xs:element name="Cijena" type="xs:integer"/>
+                        <xs:element name="Površina" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+
+                <xs:attribute name="id" type="xs:integer" use="required"/>
+            </xs:element>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

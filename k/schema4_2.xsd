@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="narudzba">
+        <xs:complexType>
+            <xs:element name="statusNarudzbe">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="nova"/>
+                        <xs:enumeration value="obrađena"/>
+                        <xs:enumeration value="otkazana"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+
+            <xs:element name="kolicina">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="50"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+
+            <xs:attribute name="valuta" type="xs:string" use="required" fixed="EUR"/>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>

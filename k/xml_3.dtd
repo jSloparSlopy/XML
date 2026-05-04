@@ -1,0 +1,6 @@
+<!ELEMENT filmovi (film+)>
+<!ELEMENT film (naslov, godina, redatelj)>
+<!ELEMENT naslov (#PCDATA)>
+<!ELEMENT godina (#PCDATA)>
+<!ELEMENT redatelj (#PCDATA)>
+<!ATTLIST film idFilm ID #REQUIRED>

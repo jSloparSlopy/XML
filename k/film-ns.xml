@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dokument xmlns:f="http://primjer.hr/film">
+    <f:film> 
+        <![CDATA[
+            Upisuje se sadržaj filma.
+            U root element unosimo xmlns namespace i URL.
+            Podaci u CDATA se ne parsiraju i prenose se kakvi jesu; š,ć,č,<,><,&/&,... i ostali dijakritici ostaju netaknuti.
+            Koristi se kada u XML imamo programski kod ili za izbijegavanje česte upotrebe entiteta.
+        ]]>
+    </f:film>
+
+</dokument>

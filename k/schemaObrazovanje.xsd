@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="CV">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Ime" type="xs:string"/>
+                <xs:element name="Prezime" type="xs:string"/>
+
+                <xs:element name="BrojMobitela">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="09[0-9]{8}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="DatumRodenja" type="xs:date"/>
+
+                <xs:element name="PopisObrazovanja">
+                    <xs:complexType>
+
+                        <xs:sequence>
+                            <xs:element name="Obrazovanje">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Institucija" type="xs:string"/>
+                                        <xs:element name="GodinaPocetka" type="xs:integer"/>
+                                        <xs:element name="GodinaZavrsetka" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+
+                                <xs:attribute name="razina">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:enumeration value="VSS" />
+                                            <xs:enumeration value="SSS" />
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="RadnaIskustva">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RadnoIskustvo">
+                                <xs:complexType>
+
+                                    <xs:sequence>
+                                        <xs:element name="DatumPocetka" type="xs:date"/>
+                                        <xs:element name="DatumZavrsetka" type="xs:date"/>
+                                        <xs:element name="NazivTvrtke" type="xs:string"/>
+                                        <xs:element name="VrstaTvrtke">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="d.o.o."/>
+                                                    <xs:enumeration value="j.d.o.o."/>
+                                                    <xs:enumeration value="d.d."/>
+                                                    <xs:enumeration value="obrt"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+
+                                <xs:attribute name="oib">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                                <xs:pattern value="[0-9]{11}"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:attribute>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
