@@ -16,7 +16,8 @@
         <BBB id="b6" name="zadnji">JavaScript</BBB>
     </EEE>
 
-    <![CDATA[ Odgovori:
+    <![CDATA[ 
+    Odgovori:
         1. Što vraća XPath izraz: //BBB[1]
 
             Vraća prvi <BBB> unutar svakog roditelja:
