@@ -1,0 +1,54 @@
+PRAKTI■NI ZADATAK 17: Na temelju XML sheme izradi valjan XML dokument koji
+mora imati:
+• jedan root element
+• poštivati redoslijed elemenata iz sheme
+• koristiti ispravne tipove podataka
+• imati obavezan atribut "valuta"
+• poštivati fiksnu vrijednost atributa valuta="EUR"
+• poštivati ograni■enje za status narudžbe
+SHEMA:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="narudzba">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="id" type="xs:integer"/>
+<xs:element name="kupac" type="xs:string"/>
+<xs:element name="datumNarudzbe" type="xs:date"/>
+<xs:element name="aktivan" type="xs:boolean"/>
+<xs:element name="status">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="zaprimljena"/>
+            <xs:enumeration value="u_obradi"/>
+            <xs:enumeration value="poslana"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="iznos">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="xs:decimal">
+<xs:attribute name="valuta" type="xs:string"
+use="required" fixed="EUR"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<narudzba xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>1</id>
+    <kupac>Jan</kupac>
+    <datumNarudzbe>2026-05-06</datumNarudzbe>
+    <aktivan>true</aktivan>
+    <status>zaprimljena</status>
+    <iznos valuta="EUR">100.00</iznos>
+
+</narudzba>

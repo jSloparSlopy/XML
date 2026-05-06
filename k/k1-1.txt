@@ -1,0 +1,63 @@
+Pitanje 15 — PRAKTI■NI ZADATAK
+PRAKTI■NI ZADATAK 16: Prepisati i ispraviti greške u danom XML dokumentu:
+
+<?xml encoding=UTF-8?/>
+<Film sifra=17>
+<Naslov>Josef</naslov>
+<Glavne_Uloge>Ivo Gregurevi■, Alen Liveri■</ Glavne Uloge>
+<Godina>2011
+<Scenarij>
+<Sc1>1.4<Sc1/>
+<Sc2>3<Sc2>
+</SCENARIJ>
+<Trajanje> <180 min <Trajanje/>
+<Komentari>
+<Pozitivno>145</ Pozitivno >
+<Negativno>30
+</ Komentari >
+<Sifra>516</Sifra>
+<Oznaka><Oznaka>
+<Opis><![CDATA[<p>Lorem ipsum</p>
+<p><b>Test:</b></p>
+<ul>
+li>lista 1</li>
+<li>lista 2</li>
+</ul>
+</Opis>
+<Spec></Specifikacija>
+Kolicina>5</kolicina>
+<Kategorija/>
+</Film sifra=16>
+
+■ Ispravi sve greške rukom — provjeri kasnije svoje rješenje
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<Film sifra="17">
+    <Naslov>Josef</Naslov>
+    <Glavne_Uloge>Ivo Gregurević, Alen Liverić</Glavne_Uloge>
+    <Godina>2011</Godina>
+    <Scenarij>
+        <Sc1> 1.4 </Sc1>
+        <Sc2> 3 </Sc2>
+    </Scenarij>
+    <Trajanje> &lt; 180 min </Trajanje>
+    <Komentari>
+        <Pozitivno>145</Pozitivno>
+        <Negativno>30</Negativno>
+    </Komentari>
+    <Sifra>516</Sifra>
+    <Oznaka><Oznaka>
+    <Opis>
+        <![CDATA[
+        <p>Lorem ipsum</p>
+        <p><b>Test:</b></p>
+        <ul>
+            <li>lista 1</li>
+            <li>lista 2</li>
+        </ul>
+        ]]>
+    </Opis>
+    <Spec></Spec>
+    <Kolicina>5</Kolicina>
+    <Kategorija/>
+</Film>
