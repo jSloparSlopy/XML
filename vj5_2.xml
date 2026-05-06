@@ -1,0 +1,70 @@
+<AAA>
+    <BBB id="b1" grupa="A">XML</BBB>
+    <BBB id="b2" grupa="B">PHP</BBB>
+    <BBB id="b3">XPath</BBB>
+    <BBB name="bbb" grupa="A">XSLT</BBB>
+    <CCC>
+        <BBB id="b4" grupa="C">DOM</BBB>
+        <DDD>
+            <BBB id="b5">JSON</BBB>
+            <BBB name="test">AJAX</BBB>
+        </DDD>
+    </CCC>
+    <EEE>
+        <FFF id="f1">HTML</FFF>
+        <FFF>CSS</FFF>
+        <BBB id="b6" name="zadnji">JavaScript</BBB>
+    </EEE>
+
+    <![CDATA[
+        1. Što vraća XPath izraz: //BBB[1]
+
+            Vraća prvi <BBB> unutar svakog roditelja:
+
+            <BBB id="b1" grupa="A">XML</BBB> (prvi pod AAA)
+            <BBB id="b4" grupa="C">DOM</BBB> (prvi pod CCC)
+            <BBB id="b5">JSON</BBB> (prvi pod DDD)
+            <BBB id="b6" name="zadnji">JavaScript</BBB> (prvi pod EEE)
+        ______________________________________________________________
+        2. Što vraća XPath izraz: /AAA/BBB[1]
+
+            Vraća samo prvi <BBB> koji je dijete <AAA>:
+
+            <BBB id="b1" grupa="A">XML</BBB>
+        ______________________________________________________________
+        3. Što vraća XPath izraz: //BBB[last()]
+
+            Vraća zadnji <BBB> unutar svakog roditelja:
+
+            <BBB name="bbb" grupa="A">XSLT</BBB>
+            <BBB id="b4" grupa="C">DOM</BBB>
+            <BBB name="test">AJAX</BBB> 
+            <BBB id="b6" name="zadnji">JavaScript</BBB> 
+
+        ______________________________________________________________
+        4. Što vraća XPath izraz: /AAA/*[1]
+
+            Vraća prvo dijete elementa <AAA> bez obzira na naziv:
+
+            <BBB id="b1" grupa="A">XML</BBB>
+
+        ______________________________________________________________
+        5. Što vraća XPath izraz: //BBB[@id and @grupa]
+
+
+            Vraća sve <BBB> koji imaju i atribut id i atribut grupa:
+
+            <BBB id="b1" grupa="A">XML</BBB>
+            <BBB id="b2" grupa="B">PHP</BBB>
+            <BBB id="b4" grupa="C">DOM</BBB>
+
+        ______________________________________________________________
+        6. Što vraća XPath izraz: //BBB[@id and not(@grupa)]
+
+            Vraća sve <BBB> koji imaju id ali nemaju grupa:
+
+            <BBB id="b3">XPath</BBB>
+            <BBB id="b5">JSON</BBB>
+            <BBB id="b6" name="zadnji">JavaScript</BBB>
+    ]]>
+</AAA>
