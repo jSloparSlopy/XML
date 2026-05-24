@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vježba 6.1 – JSON polja</title>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 2rem;
+  color: #222;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Kartica osobe ── */
+.osoba-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.osoba-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1a4f8a;
+}
+
+.osoba-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 3px 0;
+}
+
+/* ── Grid automobila ── */
+.auti-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Osnovna kartica automobila */
+.auto-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.auto-card .marka {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.auto-card p {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+.auto-card .cijena {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* CSS klasa za automobile skuplje od 20.000 EUR */
+.auto-card.skupi {
+  border: 2px solid #1a6bc4;
+  background: #eaf2fb;
+}
+
+.auto-card.skupi .marka  { color: #1a4f8a; }
+.auto-card.skupi .cijena { color: #1a4f8a; }
+
+.badge {
+  display: inline-block;
+  background: #1a6bc4;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Statistike ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.stat-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+
+.stat-box p    { font-size: 0.8rem; color: #777; margin-bottom: 4px; }
+.stat-box span { font-size: 1.1rem; font-weight: bold; color: #222; }
+  </style>
+</head>
+<body>
+
+<h1>Vježba 6.1 – JSON polja (array)</h1>
+
+<div id="osobaDiv"></div>
+<h3 id="autoNaslov"></h3>
+<div id="autoGrid"></div>
+<div id="statsDiv"></div>
+
+<script>
+
+  const jsonString = `{
+    "ime": "Petar",
+    "prezime": "Horvat",
+    "starost": 30,
+    "grad": "Zagreb",
+    "auti": [
+      { "marka": "Ford",   "model": "Focus",    "godina": 2018, "registracija": "ZG-123-AB", "cijena": 12500 },
+      { "marka": "BMW",    "model": "3 Series", "godina": 2021, "registracija": "ZG-456-CD", "cijena": 32000 },
+      { "marka": "Fiat",   "model": "500",      "godina": 2019, "registracija": "ZG-789-EF", "cijena": 9800  },
+      { "marka": "Audi",   "model": "A4",       "godina": 2022, "registracija": "ZG-321-GH", "cijena": 27500 },
+      { "marka": "Toyota", "model": "Yaris",    "godina": 2020, "registracija": "ZG-654-IJ", "cijena": 15900 }
+    ]
+  }`;
+
+  const osoba = JSON.parse(jsonString);
+
+  const LIMIT = 20000;
+
+  document.getElementById('osobaDiv').innerHTML =
+    '<p><strong>Ime i prezime:</strong> ' + osoba.ime + ' ' + osoba.prezime + '</p>' +
+    '<p><strong>Starost:</strong> ' + osoba.starost + ' godina</p>' +
+    '<p><strong>Grad:</strong> ' + osoba.grad + '</p>' +
+    '<p><strong>Broj automobila:</strong> ' + osoba.auti.length + '</p>';
+
+  document.getElementById('autoNaslov').textContent = 'Automobili (' + osoba.auti.length + ')';
+
+  const grid = document.getElementById('autoGrid');
+
+  for (let i = 0; i < osoba.auti.length; i++) {
+    const auto  = osoba.auti[i];
+    const skupi = auto.cijena > LIMIT;
+
+    const kartica = document.createElement('div');
+
+    kartica.className = skupi ? 'auto-card skupi' : 'auto-card';
+
+    kartica.innerHTML =
+      '<p><strong>' + auto.marka + ' ' + auto.model + '</strong>' +
+      (skupi ? ' ⭐ Premium' : '') + '</p>' +
+      '<p>Godina proizvodnje: ' + auto.godina + '</p>' +
+      '<p>Registracija: ' + auto.registracija + '</p>' +
+      '<p>Cijena: ' + auto.cijena.toLocaleString('hr-HR') + ' EUR</p>' +
+      '<hr>';
+
+    grid.appendChild(kartica);
+  }
+
+  const ukupno   = osoba.auti.reduce(function(zbroj, a) { return zbroj + a.cijena; }, 0);
+  const premium  = osoba.auti.filter(function(a) { return a.cijena > LIMIT; }).length;
+  const najskupi = osoba.auti.reduce(function(max, a) { return a.cijena > max.cijena ? a : max; }, osoba.auti[0]);
+
+  document.getElementById('statsDiv').innerHTML =
+    '<h3>Statistike</h3>' +
+    '<p>Ukupna vrijednost: <strong>' + ukupno.toLocaleString('hr-HR') + ' EUR</strong></p>' +
+    '<p>Premium automobila (> 20.000 €): <strong>' + premium + '</strong></p>' +
+    '<p>Najskuplji: <strong>' + najskupi.marka + ' ' + najskupi.model + '</strong></p>';
+
+</script>
+
+</body>
+</html>
