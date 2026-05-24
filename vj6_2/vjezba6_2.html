@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vježba 6.2 – JSON polja</title>
+  <link rel="stylesheet" href="stil6_2.css" />
+</head>
+<body>
+
+<h1>Vježba 6.2 – JSON polja (array)</h1>
+
+<div id="osobaDiv"></div>
+<h3 id="autoNaslov"></h3>
+<div class="auti-grid" id="autoGrid"></div>
+
+<script>
+
+  const jsonString = `{
+    "ime": "Petar",
+    "prezime": "Horvat",
+    "starost": 30,
+    "grad": "Zagreb",
+    "auti": [
+      {
+        "marka": "Ford",
+        "model": "Focus",
+        "godina": 2018,
+        "boja": "Crvena",
+        "registriran": true,
+        "cijena": 12500,
+        "kilometri": 87000,
+        "gorivo": "Benzin",
+        "vlasnik_od": 2020
+      },
+      {
+        "marka": "BMW",
+        "model": "3 Series",
+        "godina": 2021,
+        "boja": "Crna",
+        "registriran": true,
+        "cijena": 32000,
+        "kilometri": 21000,
+        "gorivo": "Diesel",
+        "vlasnik_od": 2022
+      },
+      {
+        "marka": "Fiat",
+        "model": "500",
+        "godina": 2019,
+        "boja": "Bijela",
+        "registriran": false,
+        "cijena": 9800,
+        "kilometri": 54000,
+        "gorivo": "Benzin",
+        "vlasnik_od": 2021
+      },
+      {
+        "marka": "Audi",
+        "model": "A4",
+        "godina": 2022,
+        "boja": "Siva",
+        "registriran": true,
+        "cijena": 27500,
+        "kilometri": 15000,
+        "gorivo": "Diesel",
+        "vlasnik_od": 2023
+      },
+      {
+        "marka": "Toyota",
+        "model": "Yaris",
+        "godina": 2020,
+        "boja": "Plava",
+        "registriran": false,
+        "cijena": 15900,
+        "kilometri": 42000,
+        "gorivo": "Hibrid",
+        "vlasnik_od": 2022
+      }
+    ]
+  }`;
+
+  const osoba = JSON.parse(jsonString);
+
+  const LIMIT = 20000;
+
+  document.getElementById('osobaDiv').innerHTML = `
+    <div class="osoba-card">
+      <h2>${osoba.ime} ${osoba.prezime}</h2>
+      <p>Starost: ${osoba.starost} godina</p>
+      <p>Grad: ${osoba.grad}</p>
+      <p>Broj automobila: ${osoba.auti.length}</p>
+    </div>`;
+
+  document.getElementById('autoNaslov').textContent = 'Automobili (' + osoba.auti.length + ')';
+
+  const grid = document.getElementById('autoGrid');
+
+  for (let i = 0; i < osoba.auti.length; i++) {
+    const auto  = osoba.auti[i];
+    const skupi = auto.cijena > LIMIT;
+
+    const kartica = document.createElement('div');
+    kartica.className = 'auto-card' + (skupi ? ' skupi' : ' povoljni');
+
+    kartica.innerHTML = `
+      <span class="badge ${skupi ? 'badge-skupi' : 'badge-povoljni'}">
+        ${skupi ? 'Skuplji automobil' : 'Povoljniji automobil'}
+      </span>
+      <div class="marka">${auto.marka} ${auto.model}</div>
+      <p><span class="label">Godina:</span> ${auto.godina}</p>
+      <p><span class="label">Boja:</span> ${auto.boja}</p>
+      <p><span class="label">Registriran:</span> ${auto.registriran ? 'Da' : 'Ne'}</p>
+      <p><span class="label">Gorivo:</span> ${auto.gorivo}</p>
+      <p><span class="label">Kilometri:</span> ${auto.kilometri.toLocaleString('hr-HR')} km</p>
+      <p><span class="label">Vlasnik od:</span> ${auto.vlasnik_od}.</p>
+      <div class="cijena">${auto.cijena.toLocaleString('hr-HR')} EUR</div>`;
+
+    grid.appendChild(kartica);
+  }
+
+</script>
+
+</body>
+</html>
