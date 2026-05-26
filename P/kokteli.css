@@ -1,0 +1,378 @@
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #080f0a;
+      --surface:    #0f1a11;
+      --card:       #131d14;
+      --border:     #1e3323;
+      --gold:       #c9972a;
+      --gold-light: #e8b84b;
+      --jungle:     #3a8c4e;
+      --jungle-light:#52b869;
+      --jungle-pale: #1a3d22;
+      --text:       #dde8dc;
+      --muted:      #6b8a6e;
+      --accent:     #8b3a1e;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      background-image:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(58,140,78,.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 40% at 100% 100%, rgba(58,140,78,.05) 0%, transparent 50%);
+    }
+
+    /* ── HERO ── */
+    header {
+      position: relative;
+      text-align: center;
+      padding: 80px 20px 60px;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 50% 0%, rgba(58,140,78,.15) 0%, transparent 65%),
+        radial-gradient(ellipse 30% 30% at 15% 80%, rgba(201,151,42,.10) 0%, transparent 60%),
+        radial-gradient(ellipse 25% 25% at 85% 60%, rgba(58,140,78,.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    /* Dekorativne linije kao lišće */
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        var(--jungle) 20%,
+        var(--gold) 50%,
+        var(--jungle) 80%,
+        transparent 100%);
+      opacity: .6;
+    }
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 500;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--jungle-light);
+      margin-bottom: 16px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -.02em;
+      color: var(--text);
+    }
+    header h1 span {
+      display: block;
+      color: var(--gold);
+      font-style: italic;
+    }
+    .hero-sub {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .hero-line {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--jungle), var(--gold));
+      margin: 28px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ── STATISTIKE ── */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 20px 50px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+      position: relative;
+    }
+    .stat::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 24px;
+      height: 2px;
+      background: var(--jungle);
+      border-radius: 2px;
+    }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: .75rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ── PRETRAGA ── */
+    .search-wrap {
+      max-width: 520px;
+      margin: 0 auto 48px;
+      padding: 0 20px;
+      position: relative;
+    }
+    .search-wrap input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 14px 50px 14px 22px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .95rem;
+      color: var(--text);
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .search-wrap input::placeholder { color: var(--muted); }
+    .search-wrap input:focus {
+      border-color: var(--jungle);
+      box-shadow: 0 0 0 3px rgba(58,140,78,.12);
+    }
+    .search-wrap::after {
+      content: '🔍';
+      position: absolute;
+      right: 36px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+
+    /* ── NAVIGACIJA PO KATEGORIJAMA ── */
+    .cat-nav {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 0 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      scrollbar-width: none;
+    }
+    .cat-nav::-webkit-scrollbar { display: none; }
+    .cat-btn {
+      flex-shrink: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 8px 18px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: .8rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .2s;
+      white-space: nowrap;
+    }
+    .cat-btn:hover {
+      border-color: var(--jungle);
+      color: var(--jungle-light);
+      background: var(--jungle-pale);
+    }
+    .cat-btn.active {
+      background: var(--jungle);
+      border-color: var(--jungle);
+      color: #fff;
+      font-weight: 500;
+    }
+
+    /* ── SADRŽAJ ── */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+    }
+
+    /* ── KATEGORIJA ── */
+    .kategorija {
+      margin-bottom: 60px;
+    }
+    .kat-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .kat-header::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 80px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--jungle), transparent);
+      border-radius: 2px;
+    }
+    .kat-ikona {
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+    .kat-naziv {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .kat-broj {
+      margin-left: auto;
+      font-size: .75rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--jungle);
+    }
+
+    /* ── GRID KOKTELA ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    /* ── KARTICA ── */
+    .koktel-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+      position: relative;
+    }
+    /* Zelena linija na vrhu kartice */
+    .koktel-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--jungle-pale), var(--jungle), var(--jungle-pale));
+      opacity: 0;
+      transition: opacity .2s;
+    }
+    .koktel-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--jungle);
+      box-shadow: 0 8px 32px rgba(58,140,78,.12);
+    }
+    .koktel-card:hover::before {
+      opacity: 1;
+    }
+    .card-top {
+      padding: 20px 20px 14px;
+    }
+    .card-id {
+      font-size: .7rem;
+      letter-spacing: .15em;
+      color: var(--jungle);
+      margin-bottom: 8px;
+      opacity: .7;
+    }
+    .card-naziv {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .card-opis {
+      font-size: .85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .card-divider {
+      height: 1px;
+      background: linear-gradient(90deg, var(--border), var(--jungle-pale), var(--border));
+      margin: 0 20px;
+    }
+    .card-bottom {
+      padding: 14px 20px 18px;
+    }
+    .sastojci-label {
+      font-size: .65rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--jungle-light);
+      margin-bottom: 10px;
+    }
+    .sastojak-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 5px;
+      font-size: .82rem;
+    }
+    .sastojak-kol {
+      color: var(--gold-light);
+      font-weight: 500;
+      min-width: 60px;
+      font-size: .75rem;
+      flex-shrink: 0;
+    }
+    .sastojak-ime {
+      color: var(--text);
+      opacity: .85;
+    }
+    .card-more {
+      margin-top: 8px;
+      font-size: .75rem;
+      color: var(--jungle);
+      font-style: italic;
+      opacity: .7;
+    }
+
+    /* ── NEMA REZULTATA ── */
+    .no-results {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      display: none;
+    }
+    .no-results span { font-size: 3rem; display: block; margin-bottom: 12px; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .8rem;
+      letter-spacing: .05em;
+      position: relative;
+    }
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%; transform: translateX(-50%);
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--jungle), var(--gold));
+      border-radius: 2px;
+    }
+    footer strong { color: var(--jungle-light); }
