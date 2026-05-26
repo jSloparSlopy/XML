@@ -137,7 +137,7 @@ $ikone = [
 </main>
 
 <footer>
-  <strong>Koktel Biblija</strong> &mdash; <?= $ukupno_koktela ?> koktela u <?= $ukupno_kategorija ?> kategorija
+  <strong>Koktel Priručnik</strong> &mdash; <?= $ukupno_koktela ?> koktela u <?= $ukupno_kategorija ?> kategorija
 </footer>
 
 <script>
