@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kokteli>
+
+  <kategorija naziv="Kokteli s Ginom">
+
+    <koktel id="1">
+      <naziv>Negroni</naziv>
+      <opis>Gorak i elegantan klasik.</opis>
+      <sastojci>
+        <sastojak kolicina="30ml">Gin</sastojak>
+        <sastojak kolicina="30ml">Slatki vermut</sastojak>
+        <sastojak kolicina="30ml">Campari</sastojak>
+        <sastojak kolicina="1 kocka">Veliki led</sastojak>
+        <sastojak kolicina="1 traka">Kora naranče (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="2">
+      <naziv>Dry Martini</naziv>
+      <opis>Sinonim za sofisticiranost.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Gin</sastojak>
+        <sastojak kolicina="10ml">Suhi vermut</sastojak>
+        <sastojak kolicina="2 kapi">Orange bitters</sastojak>
+        <sastojak kolicina="1">Maslina ili korica limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="3">
+      <naziv>Gin &amp; Tonic</naziv>
+      <opis>Jednostavno, osvježavajuće i univerzalno obožavano piće.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Gin</sastojak>
+        <sastojak kolicina="150ml">Tonic water</sastojak>
+        <sastojak kolicina="1/4">Limeta (iscijeđena)</sastojak>
+        <sastojak kolicina="po ukusu">Led (kocke ili sfera)</sastojak>
+        <sastojak kolicina="2-3">Klice borovice</sastojak>
+        <sastojak kolicina="1 kriška">Krastavac</sastojak>
+        <sastojak kolicina="1 grančica">Ružmarin (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="4">
+      <naziv>Tom Collins</naziv>
+      <opis>Osvježavajući ljetni miks.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Gin</sastojak>
+        <sastojak kolicina="30ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="15ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="60ml">Gazirana voda</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Limun (ukras)</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="5">
+      <naziv>Aviation</naziv>
+      <opis>Prepoznatljiv po bjeloljubičastoj boji zahvaljujući likeru od ljubičice.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Gin</sastojak>
+        <sastojak kolicina="15ml">Crème de Violette</sastojak>
+        <sastojak kolicina="15ml">Maraschino</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="6">
+      <naziv>French 75</naziv>
+      <opis>Moćna kombinacija gina i šampanjca.</opis>
+      <sastojci>
+        <sastojak kolicina="30ml">Gin</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="10ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="60ml">Šampanjac</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="7">
+      <naziv>Gimlet</naziv>
+      <opis>Oštar i osvježavajući spoj gina i kiselog sirupa od limete.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Gin</sastojak>
+        <sastojak kolicina="20ml">Lime cordial</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="1 kriška">Limeta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="8">
+      <naziv>Clover Club</naziv>
+      <opis>Elegantan ružičasti koktel sa svilenkastom pjenom.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Gin</sastojak>
+        <sastojak kolicina="15ml">Sok od malina (ili sirup)</sastojak>
+        <sastojak kolicina="20ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="1">Bjelanjak</sastojak>
+        <sastojak kolicina="3">Svježe maline (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="9">
+      <naziv>Singapore Sling</naziv>
+      <opis>Kompleksan, voćni i egzotični koktel s dugom poviješću iz hotela Raffles.</opis>
+      <sastojci>
+        <sastojak kolicina="30ml">Gin</sastojak>
+        <sastojak kolicina="15ml">Cherry Heering liker</sastojak>
+        <sastojak kolicina="7.5ml">Bénédictine</sastojak>
+        <sastojak kolicina="7.5ml">Cointreau</sastojak>
+        <sastojak kolicina="60ml">Sok od ananasa</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="10ml">Grenadine</sastojak>
+        <sastojak kolicina="1 kap">Angostura bitters</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Ananas (ukras)</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Kokteli s Whiskeyjem i Bourbonom">
+
+    <koktel id="10">
+      <naziv>Old Fashioned</naziv>
+      <opis>Kralj koktela.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Bourbon ili raženi whiskey</sastojak>
+        <sastojak kolicina="2 kapi">Angostura bitters</sastojak>
+        <sastojak kolicina="1 kocka">Šećer</sastojak>
+        <sastojak kolicina="1 žličica">Voda</sastojak>
+        <sastojak kolicina="1 velika">Kocka leda</sastojak>
+        <sastojak kolicina="1 traka">Kora naranče (ukras)</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="11">
+      <naziv>Manhattan</naziv>
+      <opis>Elegantan i moćan spoj raženog whiskeyja i vermuta.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Raženi whiskey</sastojak>
+        <sastojak kolicina="20ml">Slatki vermut</sastojak>
+        <sastojak kolicina="2 kapi">Angostura bitters</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+        <sastojak kolicina="1 traka">Kora naranče (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="12">
+      <naziv>Whiskey Sour</naziv>
+      <opis>Savršen balans kiselog i slatkog.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Whiskey</sastojak>
+        <sastojak kolicina="25ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="15ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="1">Bjelanjak</sastojak>
+        <sastojak kolicina="2 kapi">Angostura bitters (ukras)</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="13">
+      <naziv>Sazerac</naziv>
+      <opis>Službeno piće New Orleansa.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Raženi whiskey ili konjak</sastojak>
+        <sastojak kolicina="prska">Absint (oblažanje čaše)</sastojak>
+        <sastojak kolicina="1 kocka">Šećer</sastojak>
+        <sastojak kolicina="3 kapi">Peychaud's bitters</sastojak>
+        <sastojak kolicina="1 kap">Angostura bitters</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="14">
+      <naziv>Mint Julep</naziv>
+      <opis>Tradicionalno piće Kentucky Derbyja.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Bourbon</sastojak>
+        <sastojak kolicina="8-10 listića">Svježa menta</sastojak>
+        <sastojak kolicina="15ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="pune čaše">Drobljeni led</sastojak>
+        <sastojak kolicina="1 grančica">Menta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="15">
+      <naziv>Boulevardier</naziv>
+      <opis>Negroni s whiskeyjem umjesto gina. Bogat i topao okus.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Bourbon</sastojak>
+        <sastojak kolicina="30ml">Slatki vermut</sastojak>
+        <sastojak kolicina="30ml">Campari</sastojak>
+        <sastojak kolicina="1 velika">Kocka leda</sastojak>
+        <sastojak kolicina="1 traka">Kora naranče (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="16">
+      <naziv>Irish Coffee</naziv>
+      <opis>Topla irska kava s vrhnjem na vrhu.</opis>
+      <sastojci>
+        <sastojak kolicina="40ml">Irski viski</sastojak>
+        <sastojak kolicina="120ml">Vruća kava</sastojak>
+        <sastojak kolicina="1-2 žličice">Smeđi šećer</sastojak>
+        <sastojak kolicina="30ml">Hladno tuče vrhnje</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="17">
+      <naziv>Penicillin</naziv>
+      <opis>Moderni klasik s đumbirom i medom.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Blended Scotch viski</sastojak>
+        <sastojak kolicina="7.5ml">Dimljeni Islay viski (float)</sastojak>
+        <sastojak kolicina="25ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="20ml">Med-đumbir sirup</sastojak>
+        <sastojak kolicina="3 kriške">Svježi đumbir</sastojak>
+        <sastojak kolicina="1 komad">Kandiran đumbir (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="18">
+      <naziv>Rusty Nail</naziv>
+      <opis>Jednostavan ali moćan spoj škotskog viskija i Drambuiea.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Škotski viski</sastojak>
+        <sastojak kolicina="25ml">Drambuie</sastojak>
+        <sastojak kolicina="1 velika">Kocka leda</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Kokteli s Rumom">
+
+    <koktel id="19">
+      <naziv>Mojito</naziv>
+      <opis>Kubanski klasik koji hladi ljeti.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Bijeli rum</sastojak>
+        <sastojak kolicina="10-12 listića">Svježa menta</sastojak>
+        <sastojak kolicina="1/2">Limeta (izgnječena)</sastojak>
+        <sastojak kolicina="15ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="60ml">Gazirana voda</sastojak>
+        <sastojak kolicina="po ukusu">Drobljeni led</sastojak>
+        <sastojak kolicina="1 grančica">Menta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="20">
+      <naziv>Daiquiri</naziv>
+      <opis>Čist i balansiran. Original nije zaleđeni s jagodama!</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Bijeli rum</sastojak>
+        <sastojak kolicina="30ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="15ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="1 kriška">Limeta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="21">
+      <naziv>Piña Colada</naziv>
+      <opis>Tekući tropski odmor.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Bijeli rum</sastojak>
+        <sastojak kolicina="30ml">Tamni rum</sastojak>
+        <sastojak kolicina="60ml">Sok od ananasa</sastojak>
+        <sastojak kolicina="30ml">Kokosovo vrhnje (Coco López)</sastojak>
+        <sastojak kolicina="1 šalica">Drobljeni led</sastojak>
+        <sastojak kolicina="1 kriška">Ananas (ukras)</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="22">
+      <naziv>Mai Tai</naziv>
+      <opis>Kralj Tiki kulture.</opis>
+      <sastojci>
+        <sastojak kolicina="30ml">Svijetli rum</sastojak>
+        <sastojak kolicina="30ml">Tamni rum (float)</sastojak>
+        <sastojak kolicina="15ml">Curaçao liker od naranče</sastojak>
+        <sastojak kolicina="15ml">Orzeat sirup</sastojak>
+        <sastojak kolicina="30ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="po ukusu">Drobljeni led</sastojak>
+        <sastojak kolicina="1 grančica">Menta (ukras)</sastojak>
+        <sastojak kolicina="1 kriška">Ananas (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="23">
+      <naziv>Cuba Libre</naziv>
+      <opis>Jednostavno, a globalno popularno.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Bijeli rum</sastojak>
+        <sastojak kolicina="120ml">Cola</sastojak>
+        <sastojak kolicina="1/2">Limeta (iscijeđena)</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Limeta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="24">
+      <naziv>Dark 'n' Stormy</naziv>
+      <opis>Moćna kombinacija tamnog ruma i pikantnog piva od đumbira.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Tamni rum (Gosling's)</sastojak>
+        <sastojak kolicina="120ml">Ginger beer</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Limeta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="25">
+      <naziv>Zombie</naziv>
+      <opis>Legendarni Tiki koktel — poznat po tome koliko je jak.</opis>
+      <sastojci>
+        <sastojak kolicina="30ml">Bijeli rum</sastojak>
+        <sastojak kolicina="30ml">Zlatni rum</sastojak>
+        <sastojak kolicina="30ml">Tamni rum</sastojak>
+        <sastojak kolicina="15ml">Overproof rum (151)</sastojak>
+        <sastojak kolicina="15ml">Apricot brandy</sastojak>
+        <sastojak kolicina="45ml">Sok od ananasa</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="10ml">Grenadine</sastojak>
+        <sastojak kolicina="1 kap">Angostura bitters</sastojak>
+        <sastojak kolicina="po ukusu">Drobljeni led</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="26">
+      <naziv>El Presidente</naziv>
+      <opis>Elegantan kubanski koktel.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Bijeli rum</sastojak>
+        <sastojak kolicina="20ml">Suhi vermut</sastojak>
+        <sastojak kolicina="15ml">Curaçao</sastojak>
+        <sastojak kolicina="5ml">Grenadine</sastojak>
+        <sastojak kolicina="1 traka">Kora naranče (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Kokteli s Vodkom">
+
+    <koktel id="27">
+      <naziv>Espresso Martini</naziv>
+      <opis>Savršen spoj kofeina i alkohola.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Vodka</sastojak>
+        <sastojak kolicina="20ml">Kahlúa</sastojak>
+        <sastojak kolicina="30ml">Svježi espresso (ohlađen)</sastojak>
+        <sastojak kolicina="10ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="3">Zrna kave (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="28">
+      <naziv>Cosmopolitan</naziv>
+      <opis>Populariziran u seriji Seks i grad.</opis>
+      <sastojci>
+        <sastojak kolicina="40ml">Vodka Citron</sastojak>
+        <sastojak kolicina="15ml">Cointreau</sastojak>
+        <sastojak kolicina="30ml">Sok od brusnice</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="29">
+      <naziv>Moscow Mule</naziv>
+      <opis>Prepoznatljiv po bakrenoj šalici.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Vodka</sastojak>
+        <sastojak kolicina="120ml">Ginger beer</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Limeta (ukras)</sastojak>
+        <sastojak kolicina="1 grančica">Menta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="30">
+      <naziv>Bloody Mary</naziv>
+      <opis>Najpoznatiji koktel za jutro poslije.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Vodka</sastojak>
+        <sastojak kolicina="100ml">Sok od rajčice</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="3-4 kapi">Tabasco</sastojak>
+        <sastojak kolicina="1 žličica">Worcestershire umak</sastojak>
+        <sastojak kolicina="prstohvat">Sol i crni papar</sastojak>
+        <sastojak kolicina="prstohvat">Celer sol</sastojak>
+        <sastojak kolicina="1 štapić">Celer (ukras)</sastojak>
+        <sastojak kolicina="1 kriška">Limun (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="31">
+      <naziv>White Russian</naziv>
+      <opis>Omiljeno piće The Dudea iz Velikog Lebowskog.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Vodka</sastojak>
+        <sastojak kolicina="20ml">Kahlúa</sastojak>
+        <sastojak kolicina="30ml">Slatko vrhnje</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="32">
+      <naziv>Black Russian</naziv>
+      <opis>Jednostavnija verzija White Russiana.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Vodka</sastojak>
+        <sastojak kolicina="25ml">Kahlúa</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="33">
+      <naziv>Sex on the Beach</naziv>
+      <opis>Sladak, voćni i ljetni hit.</opis>
+      <sastojci>
+        <sastojak kolicina="40ml">Vodka</sastojak>
+        <sastojak kolicina="20ml">Liker od breskve</sastojak>
+        <sastojak kolicina="40ml">Sok od naranče</sastojak>
+        <sastojak kolicina="40ml">Sok od brusnice</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Naranča (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="34">
+      <naziv>Appletini</naziv>
+      <opis>Prepoznatljiv po kričavo zelenoj boji.</opis>
+      <sastojci>
+        <sastojak kolicina="40ml">Vodka</sastojak>
+        <sastojak kolicina="20ml">Liker od zelene jabuke (Sour Apple Pucker)</sastojak>
+        <sastojak kolicina="10ml">Triple Sec</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="1 kriška">Zelena jabuka (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Kokteli s Tequilom i Mezcalom">
+
+    <koktel id="35">
+      <naziv>Margarita</naziv>
+      <opis>Najpopularniji koktel s tequilom na svijetu.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Tequila Blanco</sastojak>
+        <sastojak kolicina="25ml">Triple Sec (Cointreau)</sastojak>
+        <sastojak kolicina="25ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="rub čaše">Sol</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Limeta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="36">
+      <naziv>Paloma</naziv>
+      <opis>U samom Meksiku popularnija od Margarite.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Tequila Blanco</sastojak>
+        <sastojak kolicina="100ml">Gazirani sok od grejpa (Jarritos)</sastojak>
+        <sastojak kolicina="15ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="prstohvat">Sol</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Grejp (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="37">
+      <naziv>Tequila Sunrise</naziv>
+      <opis>Prekrasan vizualni efekt izlaska sunca.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Tequila</sastojak>
+        <sastojak kolicina="100ml">Svježi sok od naranče</sastojak>
+        <sastojak kolicina="15ml">Grenadine sirup (lagano na dno)</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Naranča (ukras)</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="38">
+      <naziv>Oaxaca Old Fashioned</naziv>
+      <opis>Moderni klasik koji spaja tequilu i mezcal.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Tequila Reposado</sastojak>
+        <sastojak kolicina="15ml">Mezcal</sastojak>
+        <sastojak kolicina="7.5ml">Agavin sirup</sastojak>
+        <sastojak kolicina="2 kapi">Angostura bitters</sastojak>
+        <sastojak kolicina="1 kap">Mole bitters</sastojak>
+        <sastojak kolicina="1 velika">Kocka leda</sastojak>
+        <sastojak kolicina="1 traka">Kora naranče (flambirano, ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Kokteli s Brandyjem i Konjakom">
+
+    <koktel id="39">
+      <naziv>Sidecar</naziv>
+      <opis>Vječni klasik s konjak bazom.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Konjak (Cognac VS)</sastojak>
+        <sastojak kolicina="20ml">Cointreau</sastojak>
+        <sastojak kolicina="20ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="rub čaše">Šećer</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="40">
+      <naziv>Pisco Sour</naziv>
+      <opis>Ponos Perua i Čilea.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Pisco</sastojak>
+        <sastojak kolicina="30ml">Svježi sok od limete</sastojak>
+        <sastojak kolicina="20ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="1">Bjelanjak</sastojak>
+        <sastojak kolicina="3 kapi">Angostura bitters (ukras na pjeni)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="41">
+      <naziv>Brandy Alexander</naziv>
+      <opis>Kremast i desertni koktel.</opis>
+      <sastojci>
+        <sastojak kolicina="40ml">Brandy ili konjak</sastojak>
+        <sastojak kolicina="20ml">Tamni liker od kakaa (Crème de Cacao)</sastojak>
+        <sastojak kolicina="20ml">Slatko vrhnje</sastojak>
+        <sastojak kolicina="prstohvat">Ribani muškatni oraščić (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Pjenušavi, Lagani i Gorki (Aperitivo)">
+
+    <koktel id="42">
+      <naziv>Aperol Spritz</naziv>
+      <opis>Globalni fenomen.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Aperol</sastojak>
+        <sastojak kolicina="90ml">Prosecco</sastojak>
+        <sastojak kolicina="30ml">Gazirana voda</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Naranča (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="43">
+      <naziv>Mimosa</naziv>
+      <opis>Kraljica bruncha.</opis>
+      <sastojci>
+        <sastojak kolicina="75ml">Šampanjac ili pjenušac (ohlađen)</sastojak>
+        <sastojak kolicina="75ml">Svježi sok od naranče (ohlađen)</sastojak>
+        <sastojak kolicina="1 traka">Kora naranče (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="44">
+      <naziv>Bellini</naziv>
+      <opis>Elegantan talijanski klasik.</opis>
+      <sastojci>
+        <sastojak kolicina="100ml">Prosecco (ohlađen)</sastojak>
+        <sastojak kolicina="50ml">Pire od bijele breskve (svježi)</sastojak>
+        <sastojak kolicina="5ml">Sok od limuna</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="45">
+      <naziv>Americano</naziv>
+      <opis>Lagani uvod u Negroni.</opis>
+      <sastojci>
+        <sastojak kolicina="30ml">Campari</sastojak>
+        <sastojak kolicina="30ml">Slatki vermut</sastojak>
+        <sastojak kolicina="60ml">Gazirana voda</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Naranča (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="46">
+      <naziv>Campari Spritz</naziv>
+      <opis>Odvažnija i gorča alternativa Aperol Spritzu.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Campari</sastojak>
+        <sastojak kolicina="90ml">Prosecco</sastojak>
+        <sastojak kolicina="30ml">Gazirana voda</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Naranča (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="47">
+      <naziv>Garibaldi</naziv>
+      <opis>Nevjerojatno jednostavan talijanski klasik.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Campari</sastojak>
+        <sastojak kolicina="150ml">Svježe iscijeđeni sok od naranče (pjenasti)</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Naranča (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="48">
+      <naziv>Hugo</naziv>
+      <opis>Moderni ljetni hit s Alpa.</opis>
+      <sastojci>
+        <sastojak kolicina="100ml">Prosecco</sastojak>
+        <sastojak kolicina="20ml">Sirup od bazge (Elderflower)</sastojak>
+        <sastojak kolicina="30ml">Gazirana voda</sastojak>
+        <sastojak kolicina="1/4">Limeta (iscijeđena)</sastojak>
+        <sastojak kolicina="6-8 listića">Svježa menta</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="49">
+      <naziv>Bamboo</naziv>
+      <opis>Lagani koktel s niskim udjelom alkohola, idealan prije večere.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Fino sherry</sastojak>
+        <sastojak kolicina="45ml">Suhi vermut</sastojak>
+        <sastojak kolicina="2 kapi">Angostura bitters</sastojak>
+        <sastojak kolicina="1 kap">Orange bitters</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="50">
+      <naziv>Kir Royale</naziv>
+      <opis>Francuska elegancija u čaši.</opis>
+      <sastojci>
+        <sastojak kolicina="15ml">Crème de Cassis</sastojak>
+        <sastojak kolicina="120ml">Šampanjac (ohlađen)</sastojak>
+        <sastojak kolicina="1">Svježa ribizla (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Ostali Svjetski Specijaliteti">
+
+    <koktel id="51">
+      <naziv>Stinger</naziv>
+      <opis>Stari klasik koji se pio u visokom društvu.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Brandy</sastojak>
+        <sastojak kolicina="20ml">Crème de Menthe (bijeli)</sastojak>
+        <sastojak kolicina="1 velika">Kocka leda</sastojak>
+        <sastojak kolicina="1 listić">Menta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="52">
+      <naziv>Gibson</naziv>
+      <opis>Zapravo Dry Martini, ali s ukiseljenom lučicom umjesto masline.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Gin</sastojak>
+        <sastojak kolicina="10ml">Suhi vermut</sastojak>
+        <sastojak kolicina="1-3">Ukišeljene lučice (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="53">
+      <naziv>Vieux Carré</naziv>
+      <opis>Kompleksan i snažan klasik iz New Orleansa.</opis>
+      <sastojci>
+        <sastojak kolicina="30ml">Raženi whiskey</sastojak>
+        <sastojak kolicina="30ml">Konjak</sastojak>
+        <sastojak kolicina="30ml">Slatki vermut</sastojak>
+        <sastojak kolicina="7.5ml">Bénédictine</sastojak>
+        <sastojak kolicina="2 kapi">Angostura bitters</sastojak>
+        <sastojak kolicina="2 kapi">Peychaud's bitters</sastojak>
+        <sastojak kolicina="1 velika">Kocka leda</sastojak>
+        <sastojak kolicina="1 traka">Kora naranče (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="54">
+      <naziv>Corpse Reviver #2</naziv>
+      <opis>Legendarni koktel koji "budi iz mrtvih" nakon teške noći.</opis>
+      <sastojci>
+        <sastojak kolicina="22.5ml">Gin</sastojak>
+        <sastojak kolicina="22.5ml">Lillet Blanc</sastojak>
+        <sastojak kolicina="22.5ml">Cointreau</sastojak>
+        <sastojak kolicina="22.5ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="1 prska">Absint (oblažanje čaše)</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="55">
+      <naziv>Lemon Drop Martini</naziv>
+      <opis>Sladak i kiselkast desertni koktel.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Vodka Citron</sastojak>
+        <sastojak kolicina="15ml">Cointreau</sastojak>
+        <sastojak kolicina="20ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="10ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="rub čaše">Šećer</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="56">
+      <naziv>Sea Breeze</naziv>
+      <opis>Lagan ljetni miks.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Vodka</sastojak>
+        <sastojak kolicina="90ml">Sok od brusnice</sastojak>
+        <sastojak kolicina="30ml">Svježi sok od grejpa</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Limeta (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="57">
+      <naziv>French Martini</naziv>
+      <opis>Elegantan i voćni koktel.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Vodka</sastojak>
+        <sastojak kolicina="15ml">Chambord</sastojak>
+        <sastojak kolicina="30ml">Svježi sok od ananasa</sastojak>
+        <sastojak kolicina="3">Svježe maline (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Ostali Slavni Klasici">
+
+    <koktel id="58">
+      <naziv>Long Island Iced Tea</naziv>
+      <opis>Koktel s najviše različitih alkohola.</opis>
+      <sastojci>
+        <sastojak kolicina="15ml">Vodka</sastojak>
+        <sastojak kolicina="15ml">Gin</sastojak>
+        <sastojak kolicina="15ml">Bijeli rum</sastojak>
+        <sastojak kolicina="15ml">Tequila Blanco</sastojak>
+        <sastojak kolicina="15ml">Triple Sec</sastojak>
+        <sastojak kolicina="25ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="10ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="prska">Cola (za boju)</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+        <sastojak kolicina="1 kriška">Limun (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="59">
+      <naziv>Amaretto Sour</naziv>
+      <opis>Sladak i orašast koktel.</opis>
+      <sastojci>
+        <sastojak kolicina="45ml">Amaretto</sastojak>
+        <sastojak kolicina="15ml">Bourbon (opcionalno)</sastojak>
+        <sastojak kolicina="30ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="1">Bjelanjak</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+        <sastojak kolicina="1 kriška">Naranča (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="60">
+      <naziv>Pimm's Cup</naziv>
+      <opis>Tradicionalno britansko ljetno piće.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Pimm's No. 1</sastojak>
+        <sastojak kolicina="150ml">Limunada ili Sprite</sastojak>
+        <sastojak kolicina="3 kriške">Jagode</sastojak>
+        <sastojak kolicina="3 kriške">Krastavac</sastojak>
+        <sastojak kolicina="3 kriške">Naranča</sastojak>
+        <sastojak kolicina="1 grančica">Menta</sastojak>
+        <sastojak kolicina="po ukusu">Led</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="61">
+      <naziv>Caipirinha</naziv>
+      <opis>Nacionalno piće Brazila.</opis>
+      <sastojci>
+        <sastojak kolicina="60ml">Cachaça</sastojak>
+        <sastojak kolicina="1/2">Limeta (izrezana i izgnječena)</sastojak>
+        <sastojak kolicina="2 žličice">Smeđi šećer</sastojak>
+        <sastojak kolicina="pune čaše">Drobljeni led</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Dodatni Kokteli s Whiskeyjem">
+
+    <koktel id="62">
+      <naziv>Paper Plane</naziv>
+      <opis>Izuzetno popularan moderni klasik u jednakim dijelovima.</opis>
+      <sastojci>
+        <sastojak kolicina="22.5ml">Bourbon</sastojak>
+        <sastojak kolicina="22.5ml">Aperol</sastojak>
+        <sastojak kolicina="22.5ml">Amaro Nonino</sastojak>
+        <sastojak kolicina="22.5ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="63">
+      <naziv>New York Sour</naziv>
+      <opis>Whiskey Sour s predivnim vizualnim efektom sloja crnog vina na vrhu.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Bourbon ili raženi whiskey</sastojak>
+        <sastojak kolicina="25ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="15ml">Šećerni sirup</sastojak>
+        <sastojak kolicina="1">Bjelanjak</sastojak>
+        <sastojak kolicina="15ml">Suho crno vino (float na vrhu)</sastojak>
+        <sastojak kolicina="1">Maraschino višnja (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+  <kategorija naziv="Dodatni Kokteli s Ginom">
+
+    <koktel id="64">
+      <naziv>Bees Knees</naziv>
+      <opis>Jednostavan klasik iz doba prohibicije.</opis>
+      <sastojci>
+        <sastojak kolicina="50ml">Gin</sastojak>
+        <sastojak kolicina="20ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="20ml">Medni sirup</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+    <koktel id="65">
+      <naziv>White Lady</naziv>
+      <opis>Elegantan i svjež spoj gina, likera od naranče i limuna.</opis>
+      <sastojci>
+        <sastojak kolicina="40ml">Gin</sastojak>
+        <sastojak kolicina="20ml">Cointreau</sastojak>
+        <sastojak kolicina="20ml">Svježi sok od limuna</sastojak>
+        <sastojak kolicina="1">Bjelanjak</sastojak>
+        <sastojak kolicina="1 traka">Kora limuna (ukras)</sastojak>
+      </sastojci>
+    </koktel>
+
+  </kategorija>
+
+</kokteli>
