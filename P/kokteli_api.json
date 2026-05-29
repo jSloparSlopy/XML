@@ -1,0 +1,50 @@
+[
+    {
+        "naziv": "Dirty Nipple",
+        "opis": "This is a layered shot - the Bailey's must be on top",
+        "kategorija": "Shot",
+        "sastojci": [
+            {
+                "ime": "Kahlua",
+                "kolicina": ""
+            },
+            {
+                "ime": "Sambuca",
+                "kolicina": ""
+            },
+            {
+                "ime": "Baileys irish cream",
+                "kolicina": ""
+            }
+        ],
+        "slika": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vtyqrt1461866508.jpg"
+    },
+    {
+        "naziv": "Dirty Martini",
+        "opis": "Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.\r\nRub the rim of a martini glass with the wedge of lemon.\r\nStrain the contents of the cocktail shaker into the glass and add the olive.\r\nA dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",
+        "kategorija": "Cocktail",
+        "sastojci": [
+            {
+                "ime": "Vodka",
+                "kolicina": "70ml\/2fl oz"
+            },
+            {
+                "ime": "Dry Vermouth",
+                "kolicina": "1 tbsp"
+            },
+            {
+                "ime": "Olive Brine",
+                "kolicina": "2 tbsp"
+            },
+            {
+                "ime": "Lemon",
+                "kolicina": "1 wedge"
+            },
+            {
+                "ime": "Olive",
+                "kolicina": "1"
+            }
+        ],
+        "slika": "https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vcyvpq1485083300.jpg"
+    }
+]

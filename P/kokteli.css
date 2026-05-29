@@ -132,73 +132,130 @@
 
     /* ── PRETRAGA ── */
     .search-wrap {
-      max-width: 520px;
-      margin: 0 auto 48px;
-      padding: 0 20px;
-      position: relative;
-    }
-    .search-wrap input {
-      width: 100%;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 50px;
-      padding: 14px 50px 14px 22px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: .95rem;
-      color: var(--text);
-      outline: none;
-      transition: border-color .2s, box-shadow .2s;
-    }
-    .search-wrap input::placeholder { color: var(--muted); }
-    .search-wrap input:focus {
-      border-color: var(--jungle);
-      box-shadow: 0 0 0 3px rgba(58,140,78,.12);
-    }
-    .search-wrap::after {
-      content: '🔍';
-      position: absolute;
-      right: 36px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1rem;
-      pointer-events: none;
-    }
+  max-width: 520px;
+  margin: 0 auto 48px;
+  padding: 0 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 
-    /* ── NAVIGACIJA PO KATEGORIJAMA ── */
-    .cat-nav {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding: 0 20px 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-      scrollbar-width: none;
-    }
-    .cat-nav::-webkit-scrollbar { display: none; }
-    .cat-btn {
-      flex-shrink: 0;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 50px;
-      padding: 8px 18px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: .8rem;
-      color: var(--muted);
-      cursor: pointer;
-      transition: all .2s;
-      white-space: nowrap;
-    }
-    .cat-btn:hover {
-      border-color: var(--jungle);
-      color: var(--jungle-light);
-      background: var(--jungle-pale);
-    }
-    .cat-btn.active {
-      background: var(--jungle);
-      border-color: var(--jungle);
-      color: #fff;
-      font-weight: 500;
-    }
+.search-wrap input {
+  flex: 1;
+  width: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 14px 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .95rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.search-wrap input::placeholder { color: var(--muted); }
+
+.search-wrap input:focus {
+  border-color: var(--jungle);
+  box-shadow: 0 0 0 3px rgba(58,140,78,.12);
+}
+
+.search-wrap button {
+  flex-shrink: 0;
+  background: var(--jungle);
+  border: 1px solid var(--jungle-light);
+  border-radius: 50px;
+  padding: 14px 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .95rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s;
+  white-space: nowrap;
+}
+
+.search-wrap button:hover {
+  background: var(--jungle-light);
+  border-color: var(--gold);
+  box-shadow: 0 4px 20px rgba(58,140,78,.25);
+  transform: translateY(-1px);
+}
+
+/* ── NAVIGACIJA PO KATEGORIJAMA ── */
+
+
+.cat-nav {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  flex: 1;
+}
+
+.cat-nav::-webkit-scrollbar { display: none; }
+
+.cat-nav-wrap {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+  gap: 8px;
+}
+
+.cat-arrow {
+  flex-shrink: 0;
+  background: var(--jungle-pale);
+  border: 1px solid var(--jungle);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--jungle-light);
+  cursor: pointer;
+  transition: all .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.cat-arrow:hover {
+  background: var(--jungle);
+  border-color: var(--jungle-light);
+  color: #fff;
+}
+
+.cat-btn {
+  flex-shrink: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .8rem;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all .2s;
+  white-space: nowrap;
+}
+
+.cat-btn:hover {
+  border-color: var(--jungle);
+  color: var(--jungle-light);
+  background: var(--jungle-pale);
+}
+
+.cat-btn.active {
+  background: var(--jungle);
+  border-color: var(--jungle);
+  color: #fff;
+  font-weight: 500;
+}
 
     /* ── SADRŽAJ ── */
     main {

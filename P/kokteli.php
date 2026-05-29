@@ -5,7 +5,6 @@ if (!$xml) {
     die('Greška pri učitavanju kokteli.xml');
 }
 
-// Emoji ikone po kategoriji
 $ikone = [
     'Kokteli s Ginom'                        => '🌿',
     'Kokteli s Whiskeyjem i Bourbonom'       => '🥃',
@@ -39,7 +38,6 @@ $ikone = [
 </header>
 
 <?php
-  // prebrojavanje ukupno
   $ukupno_koktela = 0;
   $ukupno_kategorija = count($xml->kategorija);
   foreach ($xml->kategorija as $kat) {
@@ -64,16 +62,29 @@ $ikone = [
 
 <div class="search-wrap">
   <input type="text" id="pretraga" placeholder="Pretraži koktel ili sastojak..." autocomplete="off">
+  <button id="btnApi" onclick="pretražiApi()">🍸 Pretraži API</button>
 </div>
 
-<div class="cat-nav">
-  <button class="cat-btn active" onclick="filterKat('sve', this)">Sve kategorije</button>
-  <?php foreach ($xml->kategorija as $kat): ?>
-    <button class="cat-btn" onclick="filterKat('<?= htmlspecialchars((string)$kat['naziv']) ?>', this)">
-      <?= isset($ikone[(string)$kat['naziv']]) ? $ikone[(string)$kat['naziv']] . ' ' : '' ?>
-      <?= htmlspecialchars((string)$kat['naziv']) ?>
-    </button>
-  <?php endforeach; ?>
+<div class="cat-nav-wrap">
+  <button class="cat-arrow left" onclick="scrollKat(-200)">&#8249;</button>
+
+  <div class="cat-nav" id="catNav">
+
+    <button class="cat-btn active" onclick="filterKat('sve', this)">Sve kategorije</button>
+
+    <?php if (file_exists('kokteli_api.json') && !empty(json_decode(file_get_contents('kokteli_api.json'), true))): ?>
+      <button class="cat-btn" onclick="filterKat('API', this)">🌐 API Kokteli</button>
+    <?php endif; ?>
+
+    <?php foreach ($xml->kategorija as $kat): ?>
+      <button class="cat-btn" onclick="filterKat('<?= htmlspecialchars((string)$kat['naziv']) ?>', this)">
+        <?= isset($ikone[(string)$kat['naziv']]) ? $ikone[(string)$kat['naziv']] . ' ' : '' ?>
+        <?= htmlspecialchars((string)$kat['naziv']) ?>
+      </button>
+    <?php endforeach; ?>
+  </div>
+
+  <button class="cat-arrow right" onclick="scrollKat(200)">&#8250;</button>
 </div>
 
 <main>
@@ -134,10 +145,53 @@ $ikone = [
     </div>
   </section>
   <?php endforeach; ?>
+
+
+  <?php
+  $jsonPath = 'kokteli_api.json';
+  if (file_exists($jsonPath)) {
+      $apiKokteli = json_decode(file_get_contents($jsonPath), true);
+      if (!empty($apiKokteli)):
+  ?>
+  <section class="kategorija" data-kat="API">
+      <div class="kat-header">
+          <span class="kat-ikona">🌐</span>
+          <h2 class="kat-naziv">Kokteli s API-ja</h2>
+          <span class="kat-broj"><?= count($apiKokteli) ?> koktela</span>
+      </div>
+      <div class="grid">
+          <?php foreach ($apiKokteli as $i => $k): ?>
+          <div class="koktel-card"
+               data-naziv="<?= strtolower(htmlspecialchars($k['naziv'])) ?>"
+               data-sastojci="<?= strtolower(htmlspecialchars(implode(' ', array_map(fn($s) => $s['ime'], $k['sastojci'])))) ?>">
+              <div class="card-top">
+                  <div class="card-id">API · <?= str_pad($i + 1, 2, '0', STR_PAD_LEFT) ?></div>
+                  <div class="card-naziv"><?= htmlspecialchars($k['naziv']) ?></div>
+                  <div class="card-opis"><?= htmlspecialchars(mb_substr($k['opis'], 0, 100)) ?>...</div>
+              </div>
+              <div class="card-divider"></div>
+              <div class="card-bottom">
+                  <div class="sastojci-label">Sastojci</div>
+                  <?php foreach (array_slice($k['sastojci'], 0, 4) as $s): ?>
+                  <div class="sastojak-row">
+                      <span class="sastojak-kol"><?= htmlspecialchars($s['kolicina']) ?></span>
+                      <span class="sastojak-ime"><?= htmlspecialchars($s['ime']) ?></span>
+                  </div>
+                  <?php endforeach; ?>
+                  <?php if (count($k['sastojci']) > 4): ?>
+                  <div class="card-more">+ <?= count($k['sastojci']) - 4 ?> još...</div>
+                  <?php endif; ?>
+              </div>
+          </div>
+          <?php endforeach; ?>
+      </div>
+  </section>
+  <?php endif; } ?>
 </main>
 
 <footer>
-  <strong>Koktel Priručnik</strong> &mdash; <?= $ukupno_koktela ?> koktela u <?= $ukupno_kategorija ?> kategorija
+  <strong>Koktel Priručnik</strong> &mdash; <?= $ukupno_koktela ?> koktela u <?= $ukupno_kategorija ?> kategorija<br>
+  <h4>Kolegij: Podatkovna povezanost i digitalna infrastruktura, 4.semestar<br> Autor: Jan Šlopar &mdash; 0246123378</h4>
 </footer>
 
 <script>
@@ -156,7 +210,6 @@ $ikone = [
       if (match) imaRezultata = true;
     });
 
-    // Sakrij prazne kategorije
     document.querySelectorAll('.kategorija').forEach(kat => {
       const vidljivi = [...kat.querySelectorAll('.koktel-card')].some(c => c.style.display !== 'none');
       kat.style.display = vidljivi ? '' : 'none';
@@ -166,16 +219,13 @@ $ikone = [
   });
 
   function filterKat(naziv, btn) {
-    // Reset pretragu
     pretraga.value = '';
     document.querySelectorAll('.koktel-card').forEach(c => c.style.display = '');
     noResults.style.display = 'none';
 
-    // Aktivan gumb
     document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
 
-    // Filter kategorija
     document.querySelectorAll('.kategorija').forEach(kat => {
       if (naziv === 'sve') {
         kat.style.display = '';
@@ -183,6 +233,31 @@ $ikone = [
         kat.style.display = kat.dataset.kat === naziv ? '' : 'none';
       }
     });
+  }
+
+  async function pretražiApi() {
+    const q = document.getElementById('pretraga').value.trim();
+    if (!q) return;
+
+    const res = await fetch(`api_pretraga.php?q=${encodeURIComponent(q)}`);
+    const data = await res.json();
+
+    if (data.greska) {
+        alert(data.greska);
+        return;
+    }
+
+    if (data.izvor === 'lokalno') {
+        alert('Koktel već postoji lokalno!');
+        return;
+    }
+
+    alert('Koktel "' + data.naziv + '" spremljen iz API-ja!');
+    location.reload();
+  }
+
+  function scrollKat(amount) {
+    document.getElementById('catNav').scrollBy({ left: amount, behavior: 'smooth' });
   }
 </script>
 
