@@ -31,3 +31,8 @@ Aplikacija je dostupna besplatno na InfinityFree hostingu.
 | JSON | Pohrana koktela dohvaćenih s API-ja |
 | HTML/CSS/JS | Frontend, pretraživanje i filtriranje |
 
+## Autor
+
+**Jan Šlopar**  
+[jslopar@tvz.hr](mailto:jslopar@tvz.hr)
+
