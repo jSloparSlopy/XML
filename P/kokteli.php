@@ -27,7 +27,7 @@ $ikone = [
   <title>Koktel Priručnik</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="kokteli.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -74,7 +74,7 @@ $ikone = [
     <button class="cat-btn active" onclick="filterKat('sve', this)">Sve kategorije</button>
 
     <?php if (file_exists('kokteli_api.json') && !empty(json_decode(file_get_contents('kokteli_api.json'), true))): ?>
-      <button class="cat-btn" onclick="filterKat('API', this)">🌐 API Kokteli</button>
+      <button class="cat-btn" onclick="filterKat('API', this)">🌐 Naknadno dodani</button>
     <?php endif; ?>
 
     <?php foreach ($xml->kategorija as $kat): ?>
