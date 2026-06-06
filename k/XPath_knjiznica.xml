@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knjiznica>
+  <knjiga id="k1" zanr="roman">
+    <naslov>Sto godina samoce</naslov>
+    <autor>Gabriel Garcia Marquez</autor>
+    <godina>1967</godina>
+    <cijena>14.99</cijena>
+    <dostupna>true</dostupna>
+  </knjiga>
+  <knjiga id="k2" zanr="scifi">
+    <naslov>Duna</naslov>
+    <autor>Frank Herbert</autor>
+    <godina>1965</godina>
+    <cijena>12.50</cijena>
+    <dostupna>true</dostupna>
+  </knjiga>
+  <knjiga id="k3" zanr="roman">
+    <naslov>Zlocin i kazna</naslov>
+    <autor>Fjodor Dostojevski</autor>
+    <godina>1866</godina>
+    <cijena>9.99</cijena>
+    <dostupna>false</dostupna>
+  </knjiga>
+  <knjiga id="k4" zanr="scifi">
+    <naslov>Neuromant</naslov>
+    <autor>William Gibson</autor>
+    <godina>1984</godina>
+    <cijena>11.00</cijena>
+    <dostupna>true</dostupna>
+  </knjiga>
+
+  <![CDATA[
+    2. Dohvati sve knjige zanra 'scifi'. [lagano]
+        //knjiga[@zarn='scifi']
+
+    4. Dohvati sve knjige koje su dostupne (dostupna=true). [lagano]
+        //knjiga[dostupna='true']
+
+    5. Pronadi autore knjiga objavljenih nakon 1960. [lagano]
+        //knjiga[godina>1960]/autor
+
+    6. Dohvati sve atribute koji se nalaze u dokumentu. [srednje]
+        //@*
+
+    7. Pronadi najskuplju knjigu. [srednje]
+        //knjiga[cijena = max(//knjiznica/knjiga/cijena)]
+
+    8. Dohvati prvu i zadnju knjigu u listi. [srednje]
+        //knjiga[1] | /knjiga[last]
+
+    9. Pronadi knjige cija cijena je izmedju 10 i 13. [srednje]
+        //knjiga[cijena >= 10 and cijena <= 13]
+
+    10. Dohvati sve elemente koji imaju bilo koji atribut. [srednje]
+        //*[@*]
+
+    11. Prebrojaj koliko knjiga ima zanr 'roman'. [tesko]
+        count(//knjiga[@zanr='roman'])
+
+    12. Pronadi knjige koje NISU dostupne. [tesko]
+        //knjiga[dostupna='false']
+
+    14. Pronadi autora knjige koja je najstarija (najmanja godina). [tesko]
+        //knjiga[godina = min(//knjiga/godina)]/autor
+
+    15. Dohvati sve child elemente prvog knjiga elementa. [tesko]
+        //knjiga[1]/*
+
+]]>
+
+
+<![CDATA[
+    21. Dohvati cijenu najjeftinije knjige.
+        //knjiga[cijena = min(//knjiga/cijena)]/cijena
+
+    22. Pronadi knjige cija cijena je veca od 12.
+        //knjiga[cijena > 12]
+
+    24. Pronadi zanr knjige s naslovom 'Duna'.
+        //knjiga[naslov='Duna']/@zanr
+
+    25. Dohvati naslove knjiga ciji autor sadrzi 'Garcia'.
+        //knjiga[contains(autor, 'Garcia')]/naslov
+
+    27. Dohvati knjige gdje je id atribut razlicit od 'k1'.
+        //knjiga[not(@id='k1')]
+
+    28. Pronadi naslove knjiga zanra 'roman' objavljenih nakon 1900.
+        //knjiga[@zanr = 'roman' and godina > 1900]/naslov
+
+    29. Dohvati zadnji child element prve knjige.
+        //knjiga[1]/*[last()]
+
+    30. Pronadi knjige kod kojih je cijena manja od prosjeka svih cijena.
+        //knjiga[cijena < (sum(//cijena) div count(//cijena))]
+
+  ]]>
+</knjiznica>
