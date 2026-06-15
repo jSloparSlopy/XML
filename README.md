@@ -6,7 +6,7 @@ Fokus laboratorija je na **XML programiranju**, strukturi podataka i obradi XML 
 
 ---
 
-# Koktel Priručnik 🍸
+![Koktel Priručnik](P/Slike)
 
 Web aplikacija za pregled klasičnih i modernih koktela, izrađena u PHP-u s XML i JSON pohranom podataka.
 
